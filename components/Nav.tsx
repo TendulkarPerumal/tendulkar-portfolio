@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "./Container";
+import { RESUME_PATH } from "@/lib/site";
 
 const links = [
   { href: "#about", label: "About" },
@@ -28,7 +29,7 @@ export function Nav() {
           ))}
         </nav>
         <a
-          href="/resume.pdf"
+          href={RESUME_PATH}
           className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-paper transition-opacity hover:opacity-90"
         >
           Resume
