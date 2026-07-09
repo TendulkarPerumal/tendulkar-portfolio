@@ -1,11 +1,9 @@
 import { Container } from "./Container";
 import { IconDocument, IconGithub, IconLinkedin, IconMail } from "./icons";
+import { EMAIL, GITHUB_URL, LINKEDIN_URL, RESUME_PATH } from "@/lib/site";
 
-// Placeholder — see chat for 3 tagline options to choose from.
 const TAGLINE =
   "I ship AI features with the same production discipline I built over 8 years in Java.";
-
-const EMAIL = "tendulkar.backend.dev@gmail.com";
 
 export function Hero() {
   return (
@@ -25,14 +23,14 @@ export function Hero() {
 
         <div className="flex flex-wrap items-center gap-4 pt-2">
           <a
-            href="/resume.pdf"
+            href={RESUME_PATH}
             className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-paper transition-opacity hover:opacity-90"
           >
             <IconDocument className="h-4 w-4" />
             Resume
           </a>
           <a
-            href="https://github.com/"
+            href={GITHUB_URL}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink"
@@ -41,7 +39,7 @@ export function Hero() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/"
+            href={LINKEDIN_URL}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink"
