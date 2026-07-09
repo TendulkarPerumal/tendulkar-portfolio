@@ -7,7 +7,7 @@ export function Contact() {
   return (
     <section id="contact" className="border-t border-line">
       <Container className="py-20 sm:py-28">
-        <SectionHeading label="Contact" title="Let's talk" />
+        <SectionHeading index="05" label="Contact" title="Let's talk" />
 
         <p className="max-w-xl text-base leading-relaxed text-ink-muted">
           Open to AI Software Engineer and AI Product Engineer roles. Based in

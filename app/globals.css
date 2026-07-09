@@ -20,7 +20,39 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-paper);
   color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-paper);
+}
+
+/* Keep anchored sections clear of the sticky nav. */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.bg-dotgrid {
+  background-image: radial-gradient(
+    rgba(94, 100, 112, 0.22) 1.2px,
+    transparent 1.2px
+  );
+  background-size: 22px 22px;
+  mask-image: radial-gradient(
+    ellipse 75% 65% at 60% 35%,
+    black 20%,
+    transparent 72%
+  );
 }
