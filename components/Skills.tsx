@@ -44,7 +44,11 @@ export function Skills() {
   return (
     <section id="skills" className="border-t border-line">
       <Container className="py-20 sm:py-28">
-        <SectionHeading label="Skills" title="Two toolboxes, one standard" />
+        <SectionHeading
+          index="03"
+          label="Skills"
+          title="Two toolboxes, one standard"
+        />
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {groups.map((group) => (
@@ -59,7 +63,7 @@ export function Skills() {
                 {group.skills.map((skill) => (
                   <li
                     key={skill}
-                    className="rounded-full border border-line px-3 py-1 font-mono text-xs text-ink-muted"
+                    className="rounded-full border border-line px-3 py-1 font-mono text-xs text-ink-muted transition-colors hover:border-accent hover:text-accent"
                   >
                     {skill}
                   </li>

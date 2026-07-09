@@ -36,7 +36,11 @@ export function Experience() {
   return (
     <section id="experience" className="border-t border-line">
       <Container className="py-20 sm:py-28">
-        <SectionHeading label="Experience" title="Where I've shipped" />
+        <SectionHeading
+          index="04"
+          label="Experience"
+          title="Where I've shipped"
+        />
 
         <ol className="flex flex-col gap-12 border-l border-line pl-6 sm:pl-8">
           {roles.map((role) => (

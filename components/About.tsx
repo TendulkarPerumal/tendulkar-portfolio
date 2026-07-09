@@ -11,7 +11,11 @@ export function About() {
   return (
     <section id="about" className="border-t border-line">
       <Container className="py-20 sm:py-28">
-        <SectionHeading label="About" title="AI accelerates. Judgment gates." />
+        <SectionHeading
+          index="01"
+          label="About"
+          title="AI accelerates. Judgment gates."
+        />
 
         <div className="flex max-w-2xl flex-col gap-5 text-base leading-relaxed text-ink-muted">
           <p>
@@ -42,12 +46,12 @@ export function About() {
           {highlights.map((item) => (
             <div
               key={item.label}
-              className="rounded-lg border border-line bg-surface p-5"
+              className="rounded-lg border border-line bg-surface p-5 transition-colors hover:border-accent/50"
             >
               <dt className="order-last mt-1 text-sm text-ink-muted">
                 {item.label}
               </dt>
-              <dd className="font-mono text-xl font-semibold text-ink">
+              <dd className="font-mono text-xl font-semibold text-accent">
                 {item.value}
               </dd>
             </div>

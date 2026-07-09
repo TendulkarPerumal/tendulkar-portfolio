@@ -56,16 +56,16 @@ export function Projects() {
   return (
     <section id="projects" className="border-t border-line">
       <Container className="py-20 sm:py-28">
-        <SectionHeading label="Projects" title="Selected work" />
+        <SectionHeading index="02" label="Projects" title="Selected work" />
 
         <div className="flex flex-col gap-6">
           {projects.map((project) => (
             <article
               key={project.name}
-              className="rounded-lg border border-line bg-surface p-6 sm:p-8"
+              className="group rounded-lg border border-line bg-surface p-6 transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md sm:p-8"
             >
               <div className="flex flex-wrap items-start justify-between gap-3">
-                <h3 className="text-lg font-semibold text-ink">
+                <h3 className="text-lg font-semibold text-ink transition-colors group-hover:text-accent">
                   {project.name}
                 </h3>
                 {project.github ? (
